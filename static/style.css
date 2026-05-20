@@ -1,0 +1,175 @@
+/* — Google Fonts — */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+/* — Variables — */
+:root {
+        --bg: #0d1117;
+        --surface: #161b22;
+        --border: #30363d;
+        --accent: #f0a500;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --white: #ffffff;
+        --radius: 12px;
+}
+
+/* — Reset — */
+*,
+*::before,
+*::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+/* — Base — */
+body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 300;
+        line-height: 1.7;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+}
+
+/* — Header — */
+header {
+        padding: 3rem 2rem 2rem;
+        border-bottom: 1px solid var(--border);
+        text-align: center;
+}
+
+header h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(2.4rem, 6vw, 4rem);
+        font-weight: 700;
+        color: var(--white);
+        letter-spacing: -0.02em;
+}
+
+.header-sub {
+        color: var(--muted);
+        font-size: 0.9rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-top: 0.4rem;
+}
+
+/* — Back link — */
+.back-link {
+        color: var(--accent);
+        text-decoration: none;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: opacity 0.2s;
+}
+
+.back-link:hover {
+        opacity: 0.75;
+}
+
+/* — Main — */
+main {
+        flex: 1;
+        max-width: 720px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+}
+
+/* — Post Cards (index) — */
+.post-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1.8rem 2rem;
+        margin-bottom: 1.5rem;
+        transition: border-color 0.25s, transform 0.25s;
+}
+
+.post-card:hover {
+        border-color: var(--accent);
+        transform: translateY(-3px);
+}
+
+.post-card h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.55rem;
+        font-weight: 700;
+        color: var(--white);
+        margin-bottom: 0.35rem;
+}
+
+.post-card h3 {
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--muted);
+        margin-bottom: 1.2rem;
+}
+
+.read-btn {
+        display: inline-block;
+        padding: 0.45rem 1.1rem;
+        background: transparent;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.04em;
+        transition: background 0.2s, color 0.2s;
+}
+
+.read-btn:hover {
+        background: var(--accent);
+        color: var(--bg);
+}
+
+/* — Full Post — */
+.post-full {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 2.5rem 2.5rem 3rem;
+}
+
+.post-full h1 {
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(1.8rem, 4vw, 2.8rem);
+        font-weight: 700;
+        color: var(--white);
+        line-height: 1.2;
+        margin-bottom: 0.6rem;
+}
+
+.post-full .subtitle {
+        font-size: 1.15rem;
+        font-weight: 400;
+        font-style: italic;
+        color: var(--accent);
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+}
+
+.post-full .body {
+        font-size: 1.05rem;
+        color: var(--text);
+        line-height: 1.85;
+}
+
+/* — Footer — */
+footer {
+        text-align: center;
+        padding: 1.5rem;
+        color: var(--muted);
+        font-size: 0.85rem;
+        border-top: 1px solid var(--border);
+}
+
+.heart {
+        color: #e05c5c;
+}
